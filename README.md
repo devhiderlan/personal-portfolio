@@ -1,41 +1,90 @@
-# Personal Portfolio
+# personal PortFolio
 
 ## Visão Geral
 
-### Projeto de um componente interativo para avaliação de qualidade de serviço/atendimento prestado.
+### Site de um portfólio pessoal (Tech) responsivo.
 #
 
-![](./Assets/design/desktop-preview.jpg)
+![](./Assets/images/personal-portifolio.png)
 
 #
 ## Construido com:
 - HTML
-- CSS
-- JavaScript
+- CSS 
+- SASS
+
+## Bibliotecas utilizadas:
+- [Font Awesome cdn link](https://cdnjs.com/libraries/font-awesome)
 
 ## Funcionalidades
-- Card interativo para avaliação de qualidade de serviços/atendimento prestados
-
+- Site de portfólio pessoal (Tech) responsivo.
+- Design totalmente responsivo.
+#
 ## O que eu aprendi:
-- Manipulação do DOM com:
-```js
-  document.querySelector('.main-container')
-  document.querySelectorAll('.btn')
-  document.getElementById('submit')
+
+- Estilização com o SASS
+
+```css
+.destination .box-container {
+   @include grid(27rem);
+
+   .box {
+      border-radius: 1rem;
+      overflow: hidden;
+      background: $bg-color;
+
+      &:hover img {
+         transform: scale(1.1);
+      }
+
+      .image {
+         height: 20rem;
+         overflow: hidden;
+         width: 100%;
+
+         img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+         }
+      }
+
+      .content {
+         padding: 2rem;
+         text-align: center;
+
+         h3 {
+            font-size: 2rem;
+            color: $white;
+         }
+
+         p {
+            padding: 1rem 0;
+            font-size: 1.4rem;
+            color: $light-color;
+            line-height: 2;
+         }
+
+         a {
+            font-size: 1.7rem;
+            color: $blue;
+
+            &:hover i {
+               padding-left: 1rem;
+            }
+
+            i {
+               padding-right: 0.7rem;
+            }
+         }
+      }
+   }
+}
 ```
-- laços de repetição
-```js
-  rates.forEach(rate => {})
-```
-- Eventos
-```js
-  submitButton.addEventListener('click', () => {})
-```
-- Boas práticas com JavaScript
 
 ## Link
 
-Veja o projeto aqui: 
+Veja o resultado do projeto [clicando aqui 🔍](https://personal-portfolio-brown-one.vercel.app/)
 
 ## Autor
 
